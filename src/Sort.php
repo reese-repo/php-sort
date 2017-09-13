@@ -8,9 +8,18 @@
 
 namespace tinker\sort;
 
-
+/**
+ * Class Sort
+ * @package tinker\sort
+ *
+ * only for linear array
+ */
 class Sort
 {
+    /**
+     * @param $array
+     * @return array
+     */
     public static function quickSort($array)
     {
         $count = count($array);
@@ -37,6 +46,10 @@ class Sort
         return array_merge($leftArray, (array)$middle, $rightArray);
     }
 
+    /**
+     * @param $array
+     * @return array
+     */
     public static function mergeSort($array)
     {
         $count = count($array);
@@ -89,6 +102,10 @@ class Sort
         }
     }
 
+    /**
+     * @param $arr
+     * @return mixed
+     */
     public static function heapSort($arr)
     {
         $len = count($arr);
