@@ -13,7 +13,9 @@ class Sort
 {
     public static function quickSort($array)
     {
-        if (count($array[0]) <= 1) {
+        $count = count($array);
+
+        if ($count <= 1) {
             return $array;
         }
 
@@ -21,18 +23,18 @@ class Sort
         $leftArray = [];
         $rightArray = [];
 
-        foreach ($array as $value) {
-            if ($value > $middle) {
-                $rightArray[] = $value;
+        for ($i = 1;$i < $count; ++$i) {
+            if ($array[$i] > $middle) {
+                $rightArray[] = $array[$i];
             } else {
-                $leftArray[] = $value;
+                $leftArray[] = $array[$i];
             }
         }
 
         $leftArray = self::quickSort($leftArray);
         $rightArray = self::quickSort($rightArray);
 
-        return array_merge($leftArray, $middle, $rightArray);
+        return array_merge($leftArray, (array)$middle, $rightArray);
     }
 
     public static function mergeSort($array)
