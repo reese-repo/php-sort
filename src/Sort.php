@@ -6,7 +6,7 @@
  */
 
 
-namespace tinker\sort\src;
+namespace tinker\sort;
 
 
 class Sort

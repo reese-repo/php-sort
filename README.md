@@ -3,7 +3,7 @@ install with composer:
 
     {
         "require": {
-            "tinker/sort": "dev-master",
+            "tinker/php-sort": "dev-master",
         },
         "repositories": [
             {
@@ -15,4 +15,4 @@ install with composer:
 
 use with namespace:
 
-    tinker\sort\src
+    tinker\sort
