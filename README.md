@@ -8,7 +8,7 @@ install with composer:
         "repositories": [
             {
                 "type": "git",
-                "url": "https://github.com/TinkerYin/php-sort.git"
+                "url": "https://github.com/yin-hub/php-sort.git"
             }
         ]
     }
